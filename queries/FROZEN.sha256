@@ -1,0 +1,15 @@
+# Frozen before first test run: 2026-11-13T03:16Z
+# anySQL fe92f1a | AgentDojo 089ed46
+c02031635d5e8fe98600f516776972b6c468cd6230f29a1fd50d35208838e8e8  queries/B0_ignore_previous.sql
+d6344878002cd8571414b1731956d9f1b55721b44316953d4d126c099505e850  queries/D1_injection_signature.sql
+bcfbb770541bcfcb91cc3c8cd924cc168f14614da9f754937c02ef53810a2818  queries/D2_acted_after_signature.sql
+3bc2aed5a855194048aae8775f6eec69d041d8bab4d1ec45fecfff9324ef1986  queries/D3_tainted_argument.sql
+cbfe471f1b3fc11326e3549ecf98a56af787d788e9a241640d6b20c2116ec294  queries/D4_unrequested_action.sql
+d4e9a916e732339ec14420fabff4200effc09f6cc5b550edfbdf4267d46709d4  queries/D5_tainted_from_signature.sql
+7613fb5d9e41cec5b4beaf2e1e65eb23db6ecff66b203de56b9022ef0fe24e64  queries/_common.sql
+1102b5376613ecf2dd2270e52b3afb7ecc2f2d25a90bbaa9c635f53243d3e553  load_agentdojo.py
+297d3cd35cc8b2cebc01a51ebd640c2923ae5deb96238ff96bfed1476c234652  evaluate.py
+# Amendment 2026-11-13T03:17Z: first test run loaded every v1.2 tool output as empty
+# (tool_call_id is null in v1.2 runs; results were paired by id). Loader now pairs by
+# message order. Queries above unchanged (verified). Dev re-run: <=7 sessions moved per query.
+91feda5136f6d73c711e4edb09e0bc9ddea0605901fc6d42b4f81a97d3653c29  load_agentdojo.py

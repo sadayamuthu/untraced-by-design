@@ -1,0 +1,3 @@
+# anySQL 0.2.0 (provenance fix, commit fe92f1a); not yet on PyPI, so pinned by commit.
+anysql-sdk @ git+https://github.com/sadayamuthu/anysql@fe92f1a03b18b527958b118efbd9272b16b364c7
+pandas>=2.0.0
